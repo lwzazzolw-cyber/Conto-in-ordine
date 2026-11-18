@@ -1,5 +1,5 @@
 // Conto in ordine: funzionamento offline. Cambia VERSIONE quando aggiorni i file.
-const VERSIONE = 'conto-v1';
+const VERSIONE = 'conto-v2';
 const BASE = ['./', 'index.html', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSIONE).then(c => c.addAll(BASE)).then(() => self.skipWaiting()));
